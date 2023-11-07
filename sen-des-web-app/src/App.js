@@ -48,7 +48,7 @@ function App() {
         />
         <input
           type="text"
-          placeholder="Cost"
+          placeholder="Cost $"
           value={cost}
           onChange={(e) => setCost(e.target.value)}
         />
