@@ -53,7 +53,7 @@ function App() {
           onChange={(e) => setCost(e.target.value)}
         />
         <input
-          type="text"
+          type="data"
           placeholder="Entry Date"
           value={entryDate}
           onChange={(e) => setEntryDate(e.target.value)}
