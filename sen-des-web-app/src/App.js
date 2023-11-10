@@ -29,11 +29,14 @@ function App() {
     setQuantity('');
   };
 
+  // Function to remove an item from the list
   const removeItem = (index) => {
     const updatedItems = items.filter((item, i) => i !== index);
+    // Updade the list after removing the item
     setItems(updatedItems);
   };
 
+  // Rendering the component
   return (
     <div style={{ textAlign: 'center', marginTop: '50px', backgroundColor: '#FFF3E0', padding: '20px' }}>
       <h1>Item List</h1>
