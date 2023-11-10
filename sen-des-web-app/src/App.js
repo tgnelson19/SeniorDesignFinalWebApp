@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
  // Main App component 
 function App() {
+  // State variable to store item list and form inputs
   const [items, setItems] = useState([]);
   const [name, setName] = useState('');
   const [cost, setCost] = useState('');
@@ -9,6 +10,7 @@ function App() {
   const [expirationDate, setExpirationDate] = useState('');
   const [quantity, setQuantity] = useState('');
 
+  // Function to add a new item to the list
   const addItem = () => {
     const newItem = {
       name: name,
@@ -17,7 +19,9 @@ function App() {
       expirationDate: expirationDate,
       quantity: quantity,
     };
+    // Add new item to the existing list
     setItems([...items, newItem]);
+    // Reset from fields
     setName('');
     setCost('');
     setEntryDate('');
