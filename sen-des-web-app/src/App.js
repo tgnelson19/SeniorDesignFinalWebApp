@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+ // Main App component 
 function App() {
   const [items, setItems] = useState([]);
   const [name, setName] = useState('');
