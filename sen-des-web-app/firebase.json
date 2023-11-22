@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "seniordesign-9342c",
     "public": "build",
     "ignore": [
       "firebase.json",
