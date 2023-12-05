@@ -1,15 +1,16 @@
 import * as React from 'react';
-import DataTable from './Table';
 import Paper from '@mui/material/Paper';
+import { RealtimeData } from './realtimeData';
 
 const rowsExample = [
-  { id: 1, foodName: 'Apple', entryDate: "11/21/2023", expirationDate: "11/30/2023", cost: 0.50},
-  { id: 2, foodName: 'Apple', entryDate: "11/21/2023", expirationDate: "11/30/2023", cost: 0.50},
-  { id: 3, foodName: 'Apple', entryDate: "11/21/2023", expirationDate: "11/30/2023", cost: 0.50},
-  { id: 4, foodName: 'Apple', entryDate: "11/21/2023", expirationDate: "11/30/2023", cost: 0.50},
-  { id: 5, foodName: 'Apple', entryDate: "11/21/2023", expirationDate: "11/30/2023", cost: 0.50}
+  { id: 1, Name: 'Apple', EntryDate: "11/21/2023", ExpirationDate: "11/30/2023", Cost: 0.50},
+  { id: 2, Name: 'Apple', EntryDate: "11/21/2023", ExpirationDate: "11/30/2023", Cost: 0.50},
+  { id: 3, Name: 'Apple', EntryDate: "11/21/2023", ExpirationDate: "11/30/2023", Cost: 0.50},
+  { id: 4, Name: 'Apple', EntryDate: "11/21/2023", ExpirationDate: "11/30/2023", Cost: 0.50},
+  { id: 5, Name: 'Apple', EntryDate: "11/21/2023", ExpirationDate: "11/30/2023", Cost: 0.50},
+ 
 ];
-
+      
 class App extends React.Component {
 
   constructor(props) {
@@ -36,8 +37,7 @@ class App extends React.Component {
             }}
           >
 
-          <DataTable rows={this.state.rows}>
-          </DataTable>
+          <RealtimeData></RealtimeData>
 
 
         </Paper>

@@ -3,10 +3,10 @@ import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'foodName', headerName: 'Food Name', width: 130 },
-  { field: 'entryDate', headerName: 'Entry Date', width: 130 },
-  { field: 'expirationDate', headerName: 'Expiration Date', width: 130 },
-  {field: 'cost', headerName: 'Cost', type: 'number', width: 90}
+  { field: 'Name', headerName: 'Food Name', width: 130 },
+  { field: 'EntryDate', headerName: 'Entry Date', width: 130 },
+  { field: 'ExpirationDate', headerName: 'Expiration Date', width: 130 },
+  { field: 'Cost', headerName: 'Cost', type: 'number', width: 90}
 ];
 
 class DataTable extends React.Component {
